@@ -2,22 +2,41 @@
 
 .nav-tabs>li>a{
   cursor:pointer;
+  background-color: #eee;
+}
+.nav-tabs>li>a i{
+    float: right;
 }
 
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+.nav-tabs>li.active>a, 
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
     color: #FFF;
     cursor: default;
     background-color: #124680;
     border: 1px solid #124680;
     border-bottom-color: transparent;
 }
+
+.nav-tabs.nav-justified>li>a {
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    border-radius: 0;
+}
+.nav-tabs.nav-justified>.active>a, 
+.nav-tabs.nav-justified>.active>a:focus, 
+.nav-tabs.nav-justified>.active>a:hover {
+    border: 1px solid #124680;
+    text-align: left;
+}
 .flightForm .tab-content{
     color: #FFF;
     background-color: #124680;
-    padding:15px;
+    padding:35px 15px 15px 15px;
 }
 .tripType{
-  margin-bottom:20px;
+  margin-bottom:30px;
+  text-align: center;
 }
 .tripType .btn{
   border:1px solid #FFF;
@@ -30,24 +49,13 @@
   color:#124682;
   background:#FFF;
 }
-
-.flightForm input.form-control{
-  border-radius:0;
-  border:none;
-  background:none;
-  box-shadow:none;
-  border-bottom:1px solid #FFF;
-  color:#FFF;
-  padding: 6px 0px;
+.flightForm .form-group{
+    margin-bottom: 25px;
 }
-.flightForm select.form-control{
+.flightForm input.form-control, .flightForm select.form-control{
   border-radius:0;
   border:none;
-  background:none;
   box-shadow:none;
-  border-bottom:1px solid #FFF;
-  color:#FFF;
-  padding: 6px 0px;
 }
 .flightForm select.form-control option{
   color:#124682;
@@ -72,7 +80,13 @@
   .paddingRZero{
     padding-right:0;
   }
+
+
 }
+
+
+
+
 @media (max-width : 768px){
   .tripType{
     margin-top:20px;
