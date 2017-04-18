@@ -1,0 +1,81 @@
+/* Styles go here */
+
+.nav-tabs>li>a{
+  cursor:pointer;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    color: #FFF;
+    cursor: default;
+    background-color: #124680;
+    border: 1px solid #124680;
+    border-bottom-color: transparent;
+}
+.flightForm .tab-content{
+    color: #FFF;
+    background-color: #124680;
+    padding:15px;
+}
+.tripType{
+  margin-bottom:20px;
+}
+.tripType .btn{
+  border:1px solid #FFF;
+  color:#FFF;
+  background:transparent;
+}
+
+.tripType .btn.active{
+  border:1px solid #FFF;
+  color:#124682;
+  background:#FFF;
+}
+
+.flightForm input.form-control{
+  border-radius:0;
+  border:none;
+  background:none;
+  box-shadow:none;
+  border-bottom:1px solid #FFF;
+  color:#FFF;
+  padding: 6px 0px;
+}
+.flightForm select.form-control{
+  border-radius:0;
+  border:none;
+  background:none;
+  box-shadow:none;
+  border-bottom:1px solid #FFF;
+  color:#FFF;
+  padding: 6px 0px;
+}
+.flightForm select.form-control option{
+  color:#124682;
+}
+.formDropDown{
+  color:#124682;
+}
+
+.flightForm .formDropDown select.form-control{
+  border-radius:0;
+  border:none;
+  background:none;
+  box-shadow:none;
+  border-bottom:1px solid #FFF;
+  color:#FFF;
+  padding: 6px 0px;
+}
+.flightForm .formDropDown select.form-control option{
+  color:#124682;
+}
+@media (min-width : 768px){
+  .paddingRZero{
+    padding-right:0;
+  }
+}
+@media (max-width : 768px){
+  .tripType{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+}

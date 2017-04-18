@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container flightForm">
+  <h2>Plan your trip</h2>
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" data-target="#flight">Flight</a></li>
+    <li><a data-toggle="tab" data-target="#hotel">Hotel</a></li>
+    <li><a data-toggle="tab" data-target="#flightHotel">Flight + Hotel</a></li>
+    <li><a data-toggle="tab" data-target="#holidays">Holidays</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="flight" class="tab-pane fade in active">
+      <div class="row">
+        <div class="col-sm-4">
+          <div>Book Domestic and International flights</div>
+        </div>
+        <div class="col-sm-4 tripType">
+          <div>
+            <button class="btn btn-default btn-xs">One Way</button> 
+            <button class="btn btn-default active btn-xs">Return Trip</button> 
+            <button class="btn btn-default btn-xs">Multi City</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2 col-xs-6 paddingRZero">
+          <div class="form-group">
+            <label>Source</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-2 col-xs-6 paddingRZero">
+          <div class="form-group">
+            <label>Destination</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-1 col-xs-6 paddingRZero">
+          <div class="form-group">
+            <label>Departing</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-1 col-xs-6 paddingRZero">
+          <div class="form-group">
+            <label>Returning</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <div class="col-sm-1 col-xs-6 paddingRZero">
+          <div class="form-group">
+            <label>Class</label>
+            <select class="form-control">
+              <option>Economy</option>
+              <option>First</option>
+              <option>Business</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-1 col-xs-2 paddingRZero">
+          <div class="form-group">
+            <label>Adult</label>
+            <select class="form-control" >
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-1  col-xs-2 paddingRZero">
+          <div class="form-group">
+            <label>Infant</label>
+            <select class="form-control" >
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-1  col-xs-2 paddingRZero">
+          <div class="form-group">
+            <label>Pets</label>
+            <select class="form-control" >
+              <option>0</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-1">
+          <div class="form-group">
+            <label class="hidden-xs">&nbsp;</label>
+            <button class="btn-success btn" >Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="hotel" class="tab-pane fade">
+      <h3>Hotel</h3>
+      <p>Please excuse this dusty sample text, we are removing it very soon. </p>
+    </div>
+    <div id="flightHotel" class="tab-pane fade">
+      <h3>Flight + Hotel</h3>
+      <p>Please excuse this dusty sample text, we are removing it very soon. </p>
+    </div>
+    <div id="holidays" class="tab-pane fade">
+      <h3>Holidays</h3>
+      <p>Please excuse this dusty sample text, we are removing it very soon. </p>
+    </div>
+  </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
