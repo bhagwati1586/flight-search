@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Bootstrap Example</title>
+    <title>Plan your trip</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,36 +18,37 @@
         <ul class="nav nav-tabs nav-justified">
             <li class="active"><a data-toggle="tab" data-target="#flight">Flight <i class="fa fa-plane"></i> </a></li>
             <li><a data-toggle="tab" data-target="#hotel">Hotel <i class="fa fa-bed"></i></a></li>
-            <li><a data-toggle="tab" data-target="#flightHotel">Flight + Hotel <i class="fa fa-bed"></i></a></li>
+            <li><a data-toggle="tab" data-target="#flightHotel">Rental Car <i class="fa fa-car"></i></a></li>
             <li><a data-toggle="tab" data-target="#holidays">Holidays <i class="fa fa-umbrella"></i></a></li>
         </ul>
 
         <div class="tab-content">
-            <div id="flight" class="tab-pane fade in active">
+            <div id="flight" class="tab-pane tabInnerContent fade in active">
+                <div class="closeIt">x</div>
                 <div class="col-sm-8">
                     <div class="row primaryRow">
                         <div class="col-sm-6 col-xs-6">
                             <div class="form-group">
-                                <input placeholder="Source" type="text" class="form-control">
+                                <input placeholder="Source" id="source" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="col-sm-6 col-xs-6">
                             <div class="form-group">
-                                <input placeholder="Destination" type="text" class="form-control">
+                                <input placeholder="Destination" id="destination" type="text" class="form-control">
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row secondary">
                         <div class="tripType">
                             <button class="btn btn-default btn-xs">One Way</button>
                             <button class="btn btn-default active btn-xs">Return Trip</button>
                             <button class="btn btn-default btn-xs">Multi City</button>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row secondary">
                         <div class="col-sm-6 col-xs-6">
                             <div class="form-group">
-                                <input placeholder="Departing" type="text" class="form-control">
+                                <input placeholder="Departing" type="text" class="form-control ">
                             </div>
                         </div>
                         <div class="col-sm-6 col-xs-6">
@@ -57,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row secondary">
                         <div class="col-sm-4 col-xs-6 ">
                             <div class="form-group">
                                 <select class="form-control">
@@ -77,7 +78,7 @@
                             </select>
                             </div>
                         </div>
-                        <div class="col-sm-2  col-xs-2 ">
+                        <div class="col-sm-3  col-xs-2 ">
                             <div class="form-group">
                                 <select class="form-control">
                                 <option>0 Children</option>
@@ -87,7 +88,7 @@
                             </select>
                             </div>
                         </div>
-                        <div class="col-sm-2 col-xs-2 ">
+                        <div class="col-sm-3 col-xs-2 ">
                             <div class="form-group">
                                 <select class="form-control">
                                 <option>0 Infant</option>
@@ -99,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row secondary">
                         <div class="col-sm-12">
                             <div class="form-group">
                                 <button class="btn-success btn">Search</button>
