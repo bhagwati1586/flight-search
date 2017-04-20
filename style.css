@@ -1,14 +1,5 @@
 /* Styles go here */
 
-.navbar-default {
-    background-color: #FFF;
-    border-bottom:1px solid #124680;
-}
-
-.navbar-header{
-    background-color: #f8f8f8;
-    border-bottom:1px solid #124680;
-}
 
 .nav-tabs>li>a{
   cursor:pointer;
@@ -136,7 +127,6 @@
 }
 
 .navbar-nav>li.mega-dropdown>a {
-  width: 150px;
   font-weight: bold;
   position: relative;
 }
@@ -159,7 +149,7 @@
   border-left: 17px solid transparent;
   position: absolute;
   bottom: -17px;
-  left: 39.5%;
+  left: 30.5%;
   z-index: 10;
   display: none;
 }
@@ -171,7 +161,7 @@
   border-left: 19px solid transparent;
   position: absolute;
   bottom: -17px;
-  left: 38%;
+  left: 27%;
   z-index: 8;
   display: none;
 }
@@ -223,6 +213,14 @@
   }
 }
 @media (max-width : 768px){
+    .navbar-default {
+        background-color: #FFF;
+        border-bottom:1px solid #124680;
+    }
+    .navbar-header{
+        background-color: #f8f8f8;
+        border-bottom:1px solid #124680;
+    }
     .tripType{
         margin-bottom:20px;
     }
