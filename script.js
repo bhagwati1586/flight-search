@@ -12,7 +12,7 @@ $(document).ready(function () {
         }
         //console.log(_);
     });
-    $(document).on('click', '#source', function () {
+    $(document).on('click', '#source, #destination', function () {
         var _ = $(this);
         $('.secondary').slideDown('slow');
         $('.closeIt').slideDown('slow');

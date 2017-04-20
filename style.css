@@ -1,5 +1,15 @@
 /* Styles go here */
 
+.navbar-default {
+    background-color: #FFF;
+    border-bottom:1px solid #124680;
+}
+
+.navbar-header{
+    background-color: #f8f8f8;
+    border-bottom:1px solid #124680;
+}
+
 .nav-tabs>li>a{
   cursor:pointer;
   background-color: #eee;
@@ -8,8 +18,8 @@
     float: right;
 }
 
-.nav-tabs>li.active>a, 
-.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover {
     color: #FFF;
     cursor: default;
@@ -25,28 +35,38 @@
     text-transform: uppercase;
     font-size: 1.2em;
 }
-.nav-tabs.nav-justified>.active>a, 
-.nav-tabs.nav-justified>.active>a:focus, 
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:focus,
 .nav-tabs.nav-justified>.active>a:hover {
     border: 1px solid #124680;
-    text-align: left;
 }
 .flightForm .tab-content{
     color: #FFF;
     background-color: #124680;
     padding:35px 15px 15px 15px;
 }
+
+.flightForm {
+    /*position: absolute;*/
+    z-index: 2;
+    top: -129px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+
 .tabInnerContent{
     position: relative;
 }
 .closeIt {
     position: absolute;
     right: 0;
-    background: #628cbb;
+    border:2px solid #628cbb;
     height: 25px;
     width: 25px;
     text-align: center;
-    line-height: 25px;
+    line-height: 20px;
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
@@ -74,6 +94,7 @@
   border-radius:0;
   border:none;
   box-shadow:none;
+  background:#FFF;
 }
 .flightForm select.form-control option{
   color:#124682;
@@ -97,19 +118,190 @@
 .row.secondary{
     display: none;
 }
-@media (min-width : 768px){
-  .paddingRZero{
-    padding-right:0;
-  }
 
+.header-static {
+    padding-bottom: 73px;
 }
 
 
 
+/* ==================== Mega Menu CSS ======================= */
 
-@media (max-width : 768px){
-  .tripType{
-    margin-top:20px;
-    margin-bottom:20px;
+
+.navbar-nav>li.mega-dropdown>.dropdown-menu {
+  margin-top: 16px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  z-index: 7;
+}
+
+.navbar-nav>li.mega-dropdown>a {
+  width: 150px;
+  font-weight: bold;
+  position: relative;
+}
+
+.mega-dropdown {
+  position: static !important;
+}
+
+.mega-dropdown-menu {
+  padding: 15px 0px;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.mega-dropdown >a:before {
+  content: "";
+  border-bottom: 15px solid #fff;
+  border-right: 17px solid transparent;
+  border-left: 17px solid transparent;
+  position: absolute;
+  bottom: -17px;
+  left: 39.5%;
+  z-index: 10;
+  display: none;
+}
+
+.mega-dropdown>a:after {
+  content: "";
+  border-bottom: 17px solid #ccc;
+  border-right: 19px solid transparent;
+  border-left: 19px solid transparent;
+  position: absolute;
+  bottom: -17px;
+  left: 38%;
+  z-index: 8;
+  display: none;
+}
+
+.mega-dropdown.open>a:after {
+    display: block;
+}
+.mega-dropdown.open>a:before {
+    display: block;
+}
+
+.mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+
+.mega-dropdown-menu > li > ul > li > a {
+    padding: 5px 5px 5px 15px;
+    display: block;
+}
+
+.mega-dropdown-menu > li ul > li > a:hover,
+.mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+  color: #444;
+  background-color: #f5f5f5;
+}
+
+.mega-dropdown-menu .dropdown-header {
+  color: #428bca;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 3px 0px;
+}
+
+
+/* ==================== Mega Menu CSS ======================= */
+
+
+
+
+@media (min-width : 768px){
+  .paddingRZero{
+    padding-right:0;
   }
+}
+@media (max-width : 768px){
+    .tripType{
+        margin-bottom:20px;
+    }
+    .navbar-nav>li.mega-dropdown {
+        border-bottom: 1px dashed #DDD;
+    }
+   .navbar-nav>li.mega-dropdown:last-child {
+        border-bottom: none;
+    }
+    .navbar-nav>li.mega-dropdown>a {
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .mega-dropdown-menu > li > ul > li > a {
+        padding: 5px 5px 5px 5px;
+        display: block;
+    }
+
+    .navbar-nav>li.mega-dropdown>.dropdown-menu {
+        margin-top: 0px;
+    }
+    .mega-dropdown-menu > li > ul > li:not(.dropdown-header) {
+        display: none;
+    }
+
+    .mega-dropdown.open .dropdown-menu .dropdown-header, 
+    .mega-dropdown.open .dropdown-menu>li>a {
+        padding: 5px 0px 5px 0px;
+    }
+    .mega-dropdown-menu .dropdown-header{
+        border-bottom: 1px dashed #DDD;
+        font-weight: normal;
+        font-size: 1em;
+    }
+    .mega-dropdown-menu li:last-child{
+        border-bottom: none;
+    }
+    .navbar-nav>li.mega-dropdown>a:before, 
+    .navbar-nav>li.mega-dropdown>a:after {
+        display: none;
+    }
+    .flightForm .nav-tabs.nav-justified{
+    }
+    .flightForm .nav-tabs.nav-justified>li{
+        text-align: center;
+        display: table-cell;
+        width: 1%;
+    }
+    .flightForm .nav-tabs.nav-justified>li:after{
+        clear: both;
+        content: '';
+    }
+    .flightForm .nav-tabs.nav-justified>li a{
+        text-transform: inherit;
+        padding: 10px 0px;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+    .flightForm .nav-tabs.nav-justified>li span{
+        display: block;
+    }
+    .flightForm .nav-tabs>li>a i {
+        float: none;
+    }
+    .closeIt {
+        right: -10px;
+        top: -30px;
+    }
+
+    .sliding-offers {
+        position: relative;
+        text-align: center;
+    }
+
+    .sliding-offers .item>a>img, .sliding-offers .item>img {
+        margin: 0 auto;
+    }   
+    .flightForm .tab-content {
+        /*padding: 35px 15px 15px 15px;*/
+    }
+
 }
